@@ -6,8 +6,8 @@ import Navbar from './components/navbar/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb clone built with Next.js and Tailwind CSS',
+  title: 'NextBnB',
+  description: 'NextBnB clone built with Next.js and Tailwind CSS',
 }
 
 const font = Nunito({
