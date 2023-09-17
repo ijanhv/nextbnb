@@ -1,8 +1,12 @@
+import ClientOnly from "./components/ClientOnly";
+import Container from "./components/Container";
 
 export default function Home() {
   return (
-    <div>
-      Hello Airbnb
-    </div>
-  )
+
+      <Container>
+        <div>Hello Airbnb</div>
+      </Container>
+
+  );
 }
