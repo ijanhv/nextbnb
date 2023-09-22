@@ -9,6 +9,7 @@ const router = useRouter()
 
   return (
     <Image
+    onClick={() => router.push("/")}
     alt='airbnb logo'
     src='/images/logo.png'
     className='hidden md:block cursor-pointer'
