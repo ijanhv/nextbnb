@@ -5,11 +5,19 @@ const formattedCountries = countries.map((country) => ({
   value: country.cca2,
   flag: country.flag,
   latlang: country.latlng,
-  regiion: country.region,
+  region: country.region,
 }));
 
 const useCountries = () => {
-  const getAllCountries = () => {
+  const getAll = () => {
     return formattedCountries;
   };
+
+  const getByValue = (value: string) => {
+    return formattedCountries.find((country) => country.value === value);
+  };
+
+  return { getAll, getByValue };
 };
+
+export default useCountries;
