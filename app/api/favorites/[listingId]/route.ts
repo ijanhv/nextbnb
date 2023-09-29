@@ -6,7 +6,7 @@ interface IParams {
   listingId: string;
 }
 
-export default async function POST(
+export async function POST(
   request: Request,
   { params }: { params: IParams }
 ) {
