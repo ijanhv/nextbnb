@@ -1,10 +1,14 @@
+import { usePathname } from "next/navigation";
 import { getCurrentUser } from "./actions/getCurrentUser";
 import getListings from "./actions/getListings";
 import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
+import { useState } from "react";
 
 export default async function Home() {
+
+
   const currentUser = await getCurrentUser();
   const listings = await getListings();
 

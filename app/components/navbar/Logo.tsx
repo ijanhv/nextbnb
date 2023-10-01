@@ -11,10 +11,10 @@ const router = useRouter()
     <Image
     onClick={() => router.push("/")}
     alt='airbnb logo'
-    src='/images/logo.png'
+    src='/images/nextbnb.png'
     className='hidden md:block cursor-pointer'
-    height='100'
-    width='100'
+    height='150'
+    width='130'
     />
   )
 }
