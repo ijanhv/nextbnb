@@ -4,6 +4,8 @@ import { Range } from "react-date-range";
 import DatePicker from "../inputs/Calendar";
 
 import Button from "../Button";
+import { getCurrentUser } from "@/app/actions/getCurrentUser";
+import { SafeUser } from "@/app/types";
 
 interface ListingReservationProps {
   price: number;
@@ -13,19 +15,25 @@ interface ListingReservationProps {
   onSubmit: () => void;
   disabled?: boolean;
   disabledDates: Date[];
+  currentUser?: SafeUser | null;
+  userId: string;
 }
 
 const ListingReservation: React.FC<
   ListingReservationProps
-> = ({
+> = async ({
   price,
   dateRange,
   totalPrice,
   onChangeDate,
   onSubmit,
   disabled,
-  disabledDates
+  disabledDates,
+  userId,
+  currentUser
 }) => {
+
+
   return ( 
     <div 
       className="
@@ -54,11 +62,13 @@ const ListingReservation: React.FC<
       />
       <hr />
       <div className="p-4">
+        {currentUser?.id !== userId && (
         <Button 
           disabled={disabled} 
           label="Reserve" 
           onClick={onSubmit}
         />
+        )}
       </div>
       <hr />
       <div 
