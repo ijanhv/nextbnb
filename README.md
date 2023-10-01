@@ -58,15 +58,15 @@ NEXTAUTH_SECRET=
 
 ## Features
 
--[x] Next.js
--[x] Tailwind animations and effects
--[x] Full responsiveness
--[x] Credential, Google, GitHub authentication
--[x] Image upload using Cloudinary CDN
--[x] Client form validation and handling using react-hook-form
--[x] Booking / Reservation system
--[x] Creation and deletion of properties
--[x] Advanced  filters
+-- Next.js
+-- Tailwind animations and effects
+-- Full responsiveness
+-- Credential, Google, GitHub authentication
+-- Image upload using Cloudinary CDN
+-- Client form validation and handling using react-hook-form
+-- Booking / Reservation system
+-- Creation and deletion of properties
+-- Advanced  filters
 
 
 ## Tech Stack
